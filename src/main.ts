@@ -1,3 +1,9 @@
+require('elastic-apm-node').start({
+  serviceName: 'test',
+  secretToken: 'x',
+  serverUrl: 'x',
+});
+
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
